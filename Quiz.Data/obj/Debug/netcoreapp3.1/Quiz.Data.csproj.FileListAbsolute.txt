@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Data.deps.json
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Data.runtimeconfig.json
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Data.runtimeconfig.dev.json
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Data.dll
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Data.pdb
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Core.dll
+C:\Users\user\source\repos\Quiz\Quiz.Data\bin\Debug\netcoreapp3.1\Quiz.Core.pdb
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.AssemblyInfo.cs
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.csproj.CopyComplete
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.dll
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.pdb
+C:\Users\user\source\repos\Quiz\Quiz.Data\obj\Debug\netcoreapp3.1\Quiz.Data.genruntimeconfig.cache
