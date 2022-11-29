@@ -1,0 +1,332 @@
+*{
+
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+
+
+:root {
+  --step--2: clamp(0.69rem, calc(0.58rem + 0.60vw), 1.00rem);
+  --step--1: clamp(0.83rem, calc(0.67rem + 0.81vw), 1.25rem);
+  --step-0: clamp(1.00rem, calc(0.78rem + 1.10vw), 1.56rem);
+  --step-1: clamp(1.20rem, calc(0.91rem + 1.47vw), 1.95rem);
+  --step-2: clamp(1.44rem, calc(1.05rem + 1.95vw), 2.44rem);
+  --step-3: clamp(1.73rem, calc(1.21rem + 2.58vw), 3.05rem);
+  --step-4: clamp(2.07rem, calc(1.39rem + 3.40vw), 3.82rem);
+  --step-5: clamp(2.49rem, calc(1.60rem + 4.45vw), 4.77rem);
+
+  /* Font style */
+
+  --ff-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Color style */
+
+  /*
+  --color-primary:#c51350;
+  --color-secondary:#ff9a3c;
+  --color-body:#333;
+  --color-bg: #006600;
+  --color-primary-dark:#007f67;
+  --color-error:#cc3333;
+  --color-success:#4bb544;
+  --color-link:#cdcdcc;
+  --color-border:darkgrey;
+  --bs:#ffa857;
+  */
+
+  --color-primary: #0575E6;
+  --color-secondary: #6dd5ed;
+  --color-primary-light:#8dc6ff;
+  --color-primary-dark:#021B79;
+  --color-error:#cc3333;
+  --color-success:#4bb544;
+  --color-link:#606470;
+  --color-text:#5f6769;
+  --color-header-dark:#393e46;
+  --color-background:#f5f9ee;
+  --color-border-sc:#ececec;
+  --color-border-focus:#69c2ff;
+  --color-border:#d3d6db;
+  --bs:#ffa857;
+  --color-button:#f8e7e7;
+  --color-percentage:#5f6769;
+  --color-header-light:#9ba6a5;
+  --color-input-background:#f5f9ee;
+  --gradient: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+
+
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height:  100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+}
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  position: relative;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+:is(.sidebar, .sidebar-inner, .sidebar-menu) {
+  position: absolute;
+  top: 0;
+}
+
+.sidebar {
+  left: 0;
+  width: 72px;
+  height: 100%;
+  background: #000000;
+  padding: 1rem 0;
+  transition: width .4s;
+}
+
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  width: 72px;
+  height: 50px;
+  grid-gap: 2rem;
+  font-size: var(--step-0);
+  font-weight: 200;
+  line-height: 1;
+  padding: 0 1.5rem;
+}
+
+.sidebar button i {
+  color: #f9f9f9;
+}
+
+.sidebar-tools-footer button {
+  grid-gap: 6rem;
+}
+
+.sidebar-inner {
+
+  left: 0;
+  width: 72px;
+  height: 100%;
+  background: #000000;
+  padding: 1rem 0;
+
+}
+
+.sidebar-header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.125rem 0 0;
+  background: rgba(0, 0, 0, .1);
+}
+
+.sidebar-burger {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  transition: .3s;
+}
+
+.sidebar-logo {
+  height: 25px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+body.open .sidebar-logo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-tools-container {
+  display: flex;
+  flex-direction: column;
+}
+.buttons{
+  color: white;
+  svg{
+    width: 20px;
+    height: 25px;
+  }
+
+}
+
+.sidebar-tools {
+  width: 72px;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+footer {
+  display: flex;
+  flex: 0 1 auto;
+  width: 72px;
+  height: 72px;
+}
+
+.sidebar-menu {
+  flex: 1 1 auto;
+  top: 72px;
+  left: 72px;
+}
+
+.sidebar-menu > button,
+footer span {
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+}
+
+body.open .sidebar-menu > button,
+body.open footer span{
+  opacity: 1;
+  visibility: visible;
+  animation: appear .4s both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+button > span {
+  color: #f9f9f9;
+  transition: .4s;
+}
+
+button:hover span {
+  padding-left: 1.5rem;
+}
+
+body.open button > span {
+  animation: span .3s both
+}
+
+@keyframes span {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  font-size: var(--step-0);
+  font-weight: 200;
+}
+
+.copy p {
+  color: #f9f9f9;
+}
+
+.copy a {
+  color: #66bfbf;
+  font-size: var(--step--1);
+}
