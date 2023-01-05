@@ -33,7 +33,7 @@ export function Quiz(){
     //     )
     // })
     useEffect(()=>{
-        createAPIEndpoint(ENDPOINTS.question)
+        createAPIEndpoint(ENDPOINTS.questions)
             .fetch()
             .then(res=>{
                 setQns(res.data)
@@ -55,7 +55,7 @@ export function Quiz(){
         }
         else {
             setContext({ selections: [...temp], timing: timing })
-            // navigate("/result")
+            navigate("/Result")
         }
     }
     return(
@@ -70,7 +70,9 @@ export function Quiz(){
                     <CardHeader
                         title={'Question ' + (index + 1) + ' of 5'}
                         action={<Typography>{getFormattedTime(timing)}</Typography>}
+
                     />
+
                     <Box>
                         <LinearProgress variant="determinate" value={(index + 1) * 100 / 5} />
                     </Box>

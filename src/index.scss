@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+@font-face {
+  font-family: "Slab", serif;
+  src: url('/src/fonts/Slabo27px-Regular.ttf');
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
@@ -46,7 +51,7 @@ button {
 }
 /* 6 */
 .btn-6 {
-  background: #000;
+  background: #4b687a;
   color: #fff;
   line-height: 42px;
   padding: 0;
@@ -78,7 +83,7 @@ button {
 }
 .btn-6:hover{
   color: #ffffff;
-  background: transparent;
+  background: #ff8484;
 }
 .btn-6:hover:before {
   transition: all 500ms ease;
@@ -325,7 +330,7 @@ body {
 /* Card */
 .card {
   position: relative;
-  background: $white;
+  background: #b6ccda;
   border-radius: 5px;
   padding: 60px 0 40px 0;
   box-sizing: border-box;
@@ -333,7 +338,7 @@ body {
   transition: .3s ease;
 
   &:first-child {
-    background: darken($white, 2%);
+    background: #d1bdbd;
     height: 10px;
     border-radius: 5px 5px 0 0;
     margin: 0 10px;
@@ -660,4 +665,13 @@ body {
   font-size: 10px;
   letter-spacing: .7px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 420px) {
+  .container{
+    width: 353px;
+  }
+  .card{
+    padding: 61px 11px 40px 11px
+  }
 }

@@ -4,12 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Context} from "./hooks/useStateContext";
+import {createTheme, ThemeProvider} from "@mui/material";
+import {ThemeConsumer} from "styled-components";
 
+const darkTheme = createTheme({
+    palette:{
+        mode: "dark"
+    }
+})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     <Context>
+        {/*<ThemeProvider >*/}
+        {/*</ThemeProvider>*/}
         <App />
+
     </Context>
 );
 

@@ -6,7 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+@font-face {
+  font-family: "Slab", serif;
+  src: url('/src/fonts/Slabo27px-Regular.ttf');
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -37,5 +40,18 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.logout{
+  color: white !important;
+  font-weight: 600;
+}
+.resultCard{
+  font-family: "Showcard Gothic" !important;
+}
+@media only screen and (max-width: 420px) {
+  .appBar{
+      width: 373px !important;
   }
 }
